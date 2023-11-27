@@ -6,18 +6,18 @@ let green = document.querySelector('[data-green]');
 let blue = document.querySelector('[data-blue]');
 
 function hexToRgb() {
-    // Get the hex color code from the input field
+    // Declaring a variable to host the hex color code input
     let hexColor = hex.value;
     // replaces the # with nothing/ clears it out
     hexColor = hexColor.replace('#', '');
 
-    // parseInt to take in 
+    // parseInt to take in the hex value and convert it to RGB values.
   
     let r = parseInt(hexColor.substring(0, 2), 16);
     let g = parseInt(hexColor.substring(2, 4), 16);
     let b = parseInt(hexColor.substring(4, 6), 16);
 
-    // Update the RGB input fields
+    // linking the parseInt to their corresponding RGB inputs
     red.value = r;
     green.value = g;
     blue.value = b;
